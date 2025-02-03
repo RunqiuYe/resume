@@ -1,0 +1,306 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[default]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+\usepackage{newtxtext,newtxmath}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.20in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Runqiu Ye} \\ \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ 412-519-5386 ~ 
+    {\raisebox{-0.1\height}\faEnvelope\ 
+    {runqiuy@andrew.cmu.edu}} ~ 
+    {\raisebox{-0.1\height}\faLinkedin\ 
+    \href{https://www.linkedin.com/in/runqiu-ye/}
+    {\underline{linkedin.com/in/runqiu-ye}}}  ~
+    {\raisebox{-0.1\height}\faGithub\ 
+    \href{https://github.com/RunqiuYe}
+    {\underline{github.com/RunqiuYe}}}
+\end{center}
+\vspace{-5pt}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {\textbf{Carnegie Mellon University}}{Expected Graduation 2027}
+  {Bachelor of Science in Computer Science and Mathematics}
+  {Pittsburgh, Pennsylvania}
+\resumeItemListStart
+\resumeItem{\textbf{GPA:} 4.0/4.0}
+\resumeItem{\textbf{Computer Science Coursework:} Machine Learning, 
+Natural Language Processing, Artificial Intelligence, 
+Computer Systems, Parallel and Sequential Data 
+Structures and Algorithms, Computer Graphics,
+Functional Programming, Theoretical Computer Science.}
+\resumeItem{\textbf{Mathematics Coursework:} 
+Probability Theory, Honor Linear Algebra, 
+Matrix and Vector Calculus, Honor Real Analysis, 
+Honor Abstract Algebra, Functional 
+Analysis, Measure Theory, Differential Geometry.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS AND AWARDS}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small{\item{
+   \textbf{Language/Libraries:} C, C++, Python, Java, Fortran, 
+   PyTorch, TensorFlow, Mujoco, Numpy, Pandas, Matplotlib \\
+   \textbf{Developer Tools:} VS Code, Git, Github, Vim, 
+   Google Colab, Anaconda, Jupyter Lab \\
+   \textbf{Awards:} CMU Summer Undergraduate Research 
+   Fellowship, Dean List High Honors, International 
+   Young Physicists' Tournament Champion, Princeton 
+   University Physics Competition 2nd Place, 
+   2-time AIME Qualifier and top 5\% in AMC 12, 
+   Chinese Mathematics Olympiads and Chinese Physics 
+   Olympiads First Prize \\
+  }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  
+\resumeSubHeadingListStart
+\resumeSubheading
+{\textbf{Amazon}}
+{May 2025 -- August 2025}
+{Incoming Software Developer Intern}
+{Seattle, Washington}
+\resumeItemListStart
+\resumeItem{Incoming \textbf{software developer intern} at 
+Amazon.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Carnegie Mellon University} $ | $ 
+\emph{Deep Learning, Reinforcement Learning}}
+{September 2024 -- Present}
+{Undergraduate Research Assistant in Robotics}
+{Pittsburgh, Pennsylvania}
+\resumeItemListStart
+\resumeItem{Used \textbf{imitation learning} and 
+\textbf{reinforcement learning} in loco-mujoco to build 
+\textbf{individual-specific physics simulation} for joint 
+torque \textbf{from vision data}. Investigate
+the interactions of \textbf{foot models} and 
+\textbf{ground reaction force} to better simulate 
+human muscles and joints.}
+\resumeItem{Researched \textbf{computer vision-based 
+wearable robotic exoskeleton} for improving human mobility. 
+Utilized integrated data from \textbf{motion capture}, 
+\textbf{vision}, and \textbf{sensors} to estimate 
+\textbf{whole-body movement and posture}, enhancing 
+efficacy of exoskeleton control.
+\\
+Github link: \href{https://github.com/RunqiuYe/loco-mujoco/tree/metamobility-ray}
+{\underline{github.com/RunqiuYe/loco-mujoco}}}
+\resumeItemListEnd
+
+\resumeSubheading
+  {\textbf{Carnegie Mellon University} $ | $ 
+  \emph{Python, Fortran, Data Analysis, Github}}
+  {January 2024 -- August 2024}
+  {Undergraduate Research Assistant in Computational 
+  Astrophysics}
+  {Pittsburgh, Pennsylvania}
+\resumeItemListStart
+\resumeItem{Utilized \textbf{Python and Fortran} to 
+develop a \textbf{high-precision numerical simulation} 
+for evolution of binary star systems, resulting in 
+simulation of over \textbf{1.5 million binary stars} 
+in Pittsburgh Supercomputing Center and 
+\textbf{deepened insights of white dwarf formation.}}
+
+\resumeItem{Implemented \textbf{advanced statistical analysis} 
+with Python to simulation results to study dependency between certain evolution models and binary stars behaviors, resulting in \textbf{creation of new models} and \textbf{70\% more consistent results} between different simulations.}
+
+\resumeItem{Received \textbf{2024 Summer Undergraduate Research Fellowship Awards}. Github link: \href{https://github.com/RunqiuYe/post-MT-binaries}{\underline{github.com/RunqiuYe/post-MT-binaries}}.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{\textbf{Carnegie Mellon University} $ | $ \emph{Vector 
+Calculus, Matrix Calculus}}
+{August 2024 -- Present}
+{Teaching Assistant}
+{Pittsburgh, Pennsylvania}
+\resumeItemListStart
+\resumeItem{Taught \textbf{Calculus in 3D} 
+and \textbf{Honor Real Analysis}
+and held weekly \textbf{recitations} on \textbf{
+  real analysis, matrix calculus, linear algebra}.}
+\resumeItem{\textbf{Prepared course material} and graded 
+students' assignments. \textbf{Resolved misunderstandings 
+and questions} about course content.}
+\resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+
+  \resumeProjectHeading
+  {\textbf{Computer System Projects} $ | $ \emph{Computer 
+  Systems, C Programming}}{Fall 2024}
+  \resumeItemListStart
+    \resumeItem{Created a \textbf{dynamic memory allocator} (malloc lab), 
+    a \textbf{Linux shell} (shell lab), a \textbf{multithreaded
+    proxy server} (proxy lab), and a \textbf{parallel file system} 
+    (sfs lab) using \textbf{system level C}, deepening
+    \textbf{understanding of computer system and parallel programming}.}
+  \resumeItemListEnd
+
+  \vspace{-13pt}  
+
+  \resumeProjectHeading
+  {\textbf{Handwritten Digits Classifier} $ | $ \emph{Deep 
+  Learning, Convolutional Neural Network}}{August 2024}
+  \resumeItemListStart
+    \resumeItem{Built a \textbf{convolutional neural network} 
+    to classify grayscale handwritten digits. \textbf{Trained
+    with 60000 images} from the MNIST dataset.}
+    \resumeItem{Tested on 400 examples and \textbf{achieved 
+    80\% accuracy}. Plan to add more symbol and integrate 
+    into \textbf{equation to LaTeX translator}.}
+  \resumeItemListEnd
+
+  \vspace{-13pt}
+
+  \resumeProjectHeading
+  {\textbf{Text Editor in C} $ | $ \emph{C, Data Structures}}{May 2024}
+  \resumeItemListStart
+    \resumeItem{Developed a \textbf{command-line text editor 
+    using C} from scratch, deepening understanding of 
+    \textbf{data structures and terminal operations}.}
+    \resumeItem{Utilized \textbf{gap buffer} to hold text 
+    and achieve \textbf{efficient insertion and deletion}, 
+    supporting \textbf{syntax highlighting, file editing 
+    and saving, custom key bindings, and multiple open 
+    buffers}. Plan to write \textbf{my own Lisp} and develop 
+    \textbf{scripting language}.}
+    \resumeItem{Github link: 
+    \href{https://github.com/RunqiuYe/text-editor}
+    {\underline{github.com/RunqiuYe/text-editor}}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+\end{document}
